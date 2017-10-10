@@ -30,3 +30,22 @@
 
 ## bonus:
 ## how to make write this exercise in a function??
+chance_of_rain <- 0
+I_saw_raindrops <- FALSE
+my_shoes_are_wet <- FALSE
+my_ta_is_soaked <-  FALSE
+I_love_cookies <- TRUE
+
+if(I_saw_raindrops) {
+  chance_of_rain = 100
+} else if(my_shoes_are_wet) {
+  chance_of_rain <- chance_of_rain + 0.4 * chance_of_rain
+} else if(my_ta_is_soaked) {
+  chance_of_rain <- chance_of_rain + 0.5 * chance_of_rain
+}
+
+if(!I_love_cookies) {
+  print("I do like cookies.")
+}
+
+cat("The chance of rain in Seattle is", chance_of_rain)
